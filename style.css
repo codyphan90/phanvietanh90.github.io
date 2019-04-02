@@ -1,0 +1,16 @@
+body {
+    background-color: gray;
+    color: white;
+}
+
+.yellow {
+    color: yellow;
+}
+
+h1, h2 {
+    color: lightskyblue;
+}
+
+li a {
+    color: lightcoral;
+}
