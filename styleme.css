@@ -1,0 +1,29 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.content {
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+    background-color: gray;
+}
+
+
+.yellow {
+    color: yellow;
+}
+
+h1, h2 {
+    color: lightskyblue;
+    font-family: "Arial Black";
+}
+
+li a {
+    color: lightcoral;
+    text-decoration: none;
+}
+li a:hover {
+    text-decoration: underline;
+}
