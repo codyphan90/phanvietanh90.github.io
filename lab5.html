@@ -154,11 +154,34 @@
             return d;
         }));
 
+        var timer = null;
+        function delayMsg() {
+
+
+        }
+
+        window.onload = function () {
+            document.getElementById("clickbtn").click = function () {
+                if (timer == null) {
+                    console.log("@@@");
+                    timer = setInterval(function () {
+                        document.getElementById("output").innerHTML += " Rudy!";
+                    },1000);
+                } else {
+                    clearInterval(timer);
+                    timer = null;
+                }
+            }
+        }
+
     </script>
 </head>
 <body>
 
 Look in the Chrome developer console to see the output. CTRL_SHIFT_J
+
+<button id="clickbtn">Click Me!</button>
+<span id="output"></span>
 
 </body>
 </html>

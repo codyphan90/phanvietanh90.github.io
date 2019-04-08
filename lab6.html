@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lab 6</title>
+    <link rel="stylesheet" type="text/css" href="lab6.css">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script src="decoratemytext.js"></script>
+</head>
+<body>
+<h1>Text Decorator</h1>
+<img src="http://mumstudents.org/cs472/2016-05-BL/Labs/6/decorated.gif" alt="decorated">
+
+<fieldset>
+    <legend><b>Text</b></legend>
+    <textarea id="textArea" rows="4" cols="30" > This little bit of late-night insanity can be yours for the minimal
+        effort of typing any URL into the entry field above (go on, i dare you to try your own home page) and activating
+        the Malkovich! button. If you are lazy like me you can exert even less effort by selecting one of these links instead</textarea>
+</fieldset>
+
+<fieldset>
+    <legend><b>Decoration</b></legend>
+    <input type="button" value="Bigger Decorations!" onclick="textBigger()"><br>
+    <input id="checkButton" type="checkbox" name="Bling" value="Bling" onchange="textColor()"> Bling<br>
+
+    <input type="button" value="Igpay Atinlay!" onclick="checkVowel()"><br>
+</fieldset>
+
+</body>
+</html>
