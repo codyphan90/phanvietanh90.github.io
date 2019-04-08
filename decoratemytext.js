@@ -32,29 +32,30 @@ function textColor() {
 }
 
 function checkVowel() {
-    // var array = $("#textArea").val().split(/\s+/);
-    // console.log(array);
+    var array = $("#textArea").val().split(/\s+/);
+    sentence = array.map(word => {
+        let returnWord = word;
+        if (word) {
+            [first, ...rest] = word.split('');
+            if (isVowel(first)) {
+                returnWord = rest.join("") + first + 'ay';
+            }
+        }
+        return returnWord;
+    }).join(" ");
 
-    /*sentence = Array.from(sentence.split(' ')).map(word => {
-
-    let returnWord = word;
-
-    //if component part is letter characters then,
-    //move first character to end of word and and append 'ay'
-    if(/[a-zA-Z]+/.test(word)){
-      [first, ...rest] = word.split('');
-      returnWord = rest.join('') + first + 'ay'
-    }
-
-    return returnWord;
-
-  }).join(' ');*/
-
+    $("#textArea").val(sentence);
 }
 
 function isVowel(character) {
-    var vowels = ["a", "e", "i", "o", "u"];
+    let vowels = ["a", "e", "i", "o", "u"];
     return vowels.includes(character.toString().toLowerCase());
+}
+
+function replace5Words() {
+    let sentence = $("#textArea").val();
+    sentence = sentence.replace(/\w{5,}/g, "Malkovich");
+    $("#textArea").val(sentence);
 }
 
 
