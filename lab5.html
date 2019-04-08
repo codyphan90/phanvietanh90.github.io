@@ -99,8 +99,8 @@
 
         //7.
         function findLongestWord(array) {
-            var max = 0;
-            for (var i = 0; i < array.length; i++) {
+            let max = 0;
+            for (let i = 0; i < array.length; i++) {
                 max = max < array[i].length ? array[i].length : max;
             }
             return max;
@@ -111,8 +111,8 @@
 
         //8.
         function filterLongWords(array, n) {
-            var res = "";
-            for (var i = 0; i < array.length; i++) {
+            let res = "";
+            for (let i = 0; i < array.length; i++) {
                 res += array[i].length > n ? array[i] + "," : "";
             }
             return res;
@@ -120,7 +120,6 @@
         console.log("Expected output of filterLongWords(['jag testar', 'jag','jag test'], 5) is ['jag testar','jag test'] " + myFunctionTest('jag testar,jag test,', function () {
             return filterLongWords(['jag testar', 'jag','jag test'], 5);
         }));
-
 
 
         /*9.Modify the jsfiddle on the map/filter/reduce slide as follows:
