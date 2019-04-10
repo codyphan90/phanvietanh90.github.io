@@ -1,6 +1,6 @@
-var speed = 250;
-var index = 0;
-var timer;
+let speed = 250;
+let index = 0;
+let timer;
 
 // var startButton = document.getElementById("start");
 // var stopButton  = document.getElementById("stop");
@@ -10,8 +10,8 @@ var timer;
 window.onload = function () {
     document.getElementById("start").onclick = function () {
         controlDisable(true);
-        var animation = document.getElementById("animation").value;
-        var contents = ANIMATIONS[animation];
+        let animation = document.getElementById("animation").value;
+        let contents = ANIMATIONS[animation];
         contents = contents.split("=====\n");
         timer = setInterval((contents) => {
             document.getElementById("text-area").value = contents[index];
