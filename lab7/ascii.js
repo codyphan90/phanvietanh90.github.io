@@ -2,11 +2,6 @@ let speed = 250;
 let index = 0;
 let timer;
 
-// var startButton = document.getElementById("start");
-// var stopButton  = document.getElementById("stop");
-// var animationSelect = document.getElementById("animation");
-// var fontSizeSelect = document.getElementById("fontsize");
-// var turboCheck = document.getElementById("turbo");
 window.onload = function () {
     document.getElementById("start").onclick = function () {
         controlDisable(true);
