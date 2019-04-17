@@ -14,7 +14,8 @@
 <body>
 <form action="lab12" method="get">
     <h1>The Number </h1>
-    <p>Your current score is <%= session.getAttribute("score")%></p>
+<%--    <p>Your current score is <%= session.getAttribute("score")%></p>--%>
+    <p>Your current score is ${score}</p>
 
     <p>Guess the next number in the sequence</p>
     <p><%=  Quiz.questions[(int)session.getAttribute("currentQuestion")]%></p>
